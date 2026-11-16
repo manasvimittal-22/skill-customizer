@@ -4,6 +4,10 @@ All notable changes are documented here. The format follows [Keep a Changelog](h
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-11-16
+
+First public release (early version), tested by installing from the public repo and customizing the frontend-design plugin skill.
+
 ### Added
 
 - `customize` skill: setup wizard (pop-ups or settings file), first customization, settings changes, text patches, undo, and restoring customizations after updates.
@@ -38,3 +42,6 @@ All notable changes are documented here. The format follows [Keep a Changelog](h
 
 - The settings page says a link is missing its token, instead of saying the page stopped.
 - Undoing a `reapply` now goes back to "updated, changes lost" instead of marking the skill unchanged, and a further `undo` stops at the update (`SKILL_CHANGED`) instead of restoring the pre-update text over it.
+
+[Unreleased]: https://github.com/manasvimittal-22/skill-customizer/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/manasvimittal-22/skill-customizer/releases/tag/v0.1.0
