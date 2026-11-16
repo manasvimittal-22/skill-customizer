@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="t d">
+  <title id="t">What happens when a skill updates</title>
+  <desc id="d">1. You customize a skill. 2. skill-customizer remembers what you changed. 3. The skill updates. 4. Your changes are checked. 5. If they're gone, Claude offers to put them back. 6. You see the before and after and say yes.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path class="arrowhead" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+  </defs>
+  <style>
+    .bg { fill: #f6f5f2; }
+    .box { fill: #ffffff; stroke: #e4e1db; stroke-width: 1.5; }
+    .key { fill: #fbeee7; stroke: #b4532a; stroke-width: 1.5; }
+    .num { fill: #b4532a; font: 700 13px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .txt { fill: #1d1c1a; font: 600 15px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .note { fill: #6b6862; font: 400 13px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .line { stroke: #8a857d; stroke-width: 1.8; fill: none; }
+    .dash { stroke-dasharray: 5 5; }
+    .arrowhead { fill: #8a857d; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #171614; }
+      .box { fill: #211f1d; stroke: #35322e; }
+      .key { fill: #3a2519; stroke: #e07a4f; }
+      .num { fill: #e07a4f; }
+      .txt { fill: #ece9e4; }
+      .note { fill: #a29d95; }
+      .line { stroke: #8f897f; }
+      .arrowhead { fill: #8f897f; }
+    }
+  </style>
+  <rect class="bg" width="960" height="300" rx="20"/>
+
+  <!-- Row 1: what you do once -->
+  <rect class="box" x="30" y="30" width="200" height="72" rx="12"/>
+  <text class="num" x="48" y="56">1</text>
+  <text class="txt" x="48" y="80">You customize a skill</text>
+
+  <line class="line" x1="230" y1="66" x2="268" y2="66" marker-end="url(#arrow)"/>
+
+  <rect class="box" x="270" y="30" width="200" height="72" rx="12"/>
+  <text class="num" x="288" y="56">2</text>
+  <text class="txt" x="288" y="80">Your changes are saved</text>
+
+  <text class="note" x="500" y="60">Saved outside the skill,</text>
+  <text class="note" x="500" y="80">so updates can't delete them.</text>
+
+  <!-- Row 2: every update -->
+  <rect class="box" x="30" y="190" width="200" height="72" rx="12"/>
+  <text class="num" x="48" y="216">3</text>
+  <text class="txt" x="48" y="240">The skill updates</text>
+
+  <line class="line" x1="230" y1="226" x2="268" y2="226" marker-end="url(#arrow)"/>
+
+  <rect class="box" x="270" y="190" width="200" height="72" rx="12"/>
+  <text class="num" x="288" y="216">4</text>
+  <text class="txt" x="288" y="240">Your changes are checked</text>
+
+  <line class="line dash" x1="370" y1="102" x2="370" y2="186" marker-end="url(#arrow)"/>
+
+  <line class="line" x1="470" y1="226" x2="508" y2="226" marker-end="url(#arrow)"/>
+
+  <rect class="key" x="510" y="190" width="200" height="72" rx="12"/>
+  <text class="num" x="528" y="211">5</text>
+  <text class="txt" x="528" y="233">Claude offers to</text>
+  <text class="txt" x="528" y="252">put them back</text>
+
+  <line class="line" x1="710" y1="226" x2="748" y2="226" marker-end="url(#arrow)"/>
+
+  <rect class="key" x="750" y="190" width="180" height="72" rx="12"/>
+  <text class="num" x="768" y="211">6</text>
+  <text class="txt" x="768" y="233">You see the change</text>
+  <text class="txt" x="768" y="252">and say yes</text>
+
+  <text class="note" x="510" y="286">Only if something is missing. Otherwise you hear nothing.</text>
+</svg>

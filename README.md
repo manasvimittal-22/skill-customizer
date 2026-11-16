@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/manasvimittal-22/skill-customizer/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/manasvimittal-22/skill-customizer?label=release&color=b4532a"></a>
+  <a href="https://github.com/manasvimittal-22/skill-customizer/releases"><img alt="Version 0.1.0" src="https://img.shields.io/badge/version-0.1.0-b4532a"></a>
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-555"></a>
   <img alt="Works with Claude Code" src="https://img.shields.io/badge/Claude%20Code-plugin%20%2B%20skill-b4532a">
   <img alt="Runs on your computer only" src="https://img.shields.io/badge/data-stays%20on%20your%20computer-2f7d4f">
@@ -82,15 +82,9 @@ On the settings page there is also a box for **anything a switch doesn't cover**
 
 ## What happens when a skill updates
 
-```mermaid
-flowchart LR
-    A["You customize a skill"] --> B["skill-customizer<br/>remembers your changes"]
-    C["The skill updates"] --> D{"Are your changes<br/>still there?"}
-    B -.-> D
-    D -- "yes" --> E["Nothing to do"]
-    D -- "no" --> F["Claude tells you<br/>and offers to put them back"]
-    F --> G["You see the before and after<br/>and say yes"]
-```
+<p align="center">
+  <img src="assets/how-updates-work.svg" alt="1. You customize a skill. 2. Your changes are saved. 3. The skill updates. 4. Your changes are checked. 5. Claude offers to put them back. 6. You see the change and say yes." width="820">
+</p>
 
 - **Checked automatically** each time you start Claude Code. You only hear about it when something needs your attention.
 - **Reworded by the update?** Claude applies what you wanted to the new wording, and shows you the result first.
