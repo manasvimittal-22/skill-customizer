@@ -26,6 +26,8 @@ skill-customizer turns a skill's behaviour into simple settings you can switch o
   </picture>
   <br>
   <sub>The settings page for the <code>frontend-design</code> skill. Every switch is something the skill does.</sub>
+  <br>
+  <sub><a href="https://github.com/anthropics/claude-plugins-official/tree/main/plugins/frontend-design"><code>frontend-design</code></a> is a skill by Anthropic (Apache 2.0), used here as an example. skill-customizer is an independent project, not made or endorsed by Anthropic.</sub>
 </p>
 
 ## Install
