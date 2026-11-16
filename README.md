@@ -41,7 +41,7 @@ The first time, a short setup asks two questions:
 1. **Which screen?** Pop-ups in the chat, a settings file you edit yourself, a settings page in your browser, or a panel beside the chat (`/skill-settings`; plugin install only).
 2. **How are changes applied?** The skill reads a small settings file each run (about 100–200 tokens, and changing a setting is instant), or Claude rewrites the skill text.
 
-The first time you customize a skill, Claude reads it, suggests the behaviours worth turning into settings (say "ask before installing" or "how many options to show"), and you tick the ones you want. After that, changing a setting needs no rewrite: flip it in the page or panel, pick from a pop-up, or edit `settings.yaml`. The page and panel only ever change setting values, never a skill's text.
+The first time you customize a skill, Claude reads it, suggests the behaviours worth turning into settings (say "ask before installing" or "how many options to show"), and they become settings (with pop-ups you tick the ones you want; on the page, panel or settings file you get them all). After that, changing a setting needs no rewrite: flip it in the page or panel, pick from a pop-up, or edit `settings.yaml`. On the page, pick your choices and press **Save**; the box at the bottom takes anything a setting doesn't cover, and Claude picks it up in the chat. The page and panel only ever change setting values, never a skill's text.
 
 **Every write to a skill is previewed and needs your yes.** A backup is kept, so `undo` always works.
 
