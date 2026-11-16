@@ -1,0 +1,13 @@
+{
+  "name": "skill-customizer",
+  "description": "Customize any installed skill through clickable options or a settings file, and keep your changes when the skill updates.",
+  "author": {
+    "name": "manasvimittal-22",
+    "url": "https://github.com/manasvimittal-22"
+  },
+  "homepage": "https://github.com/manasvimittal-22/skill-customizer",
+  "repository": "https://github.com/manasvimittal-22/skill-customizer",
+  "license": "MIT",
+  "keywords": ["skills", "customization", "settings", "updates"],
+  "types": "./panel/state.d.ts"
+}

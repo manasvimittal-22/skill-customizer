@@ -1,0 +1,17 @@
+{
+  "name": "skill-customizer",
+  "owner": {
+    "name": "manasvimittal-22",
+    "url": "https://github.com/manasvimittal-22"
+  },
+  "description": "Customize installed Claude Code skills and keep your changes across updates.",
+  "plugins": [
+    {
+      "name": "skill-customizer",
+      "source": "./",
+      "description": "Customize any installed skill through clickable options or a settings file, and keep your changes when the skill updates.",
+      "category": "productivity",
+      "tags": ["skills", "customization", "settings"]
+    }
+  ]
+}

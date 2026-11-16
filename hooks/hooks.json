@@ -1,0 +1,18 @@
+{
+  "description": "skill-customizer: at session start, check customized skills for updates that removed the user's customizations (prints nothing, so costs no tokens, unless something needs attention). The module adds the settings panel beside the chat.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/skills/customize/scripts/sc.mjs\" check-updates --hook",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "modules": ["../panel/register.tsx"]
+}
