@@ -4,6 +4,11 @@ All notable changes are documented here. The format follows [Keep a Changelog](h
 
 ## [Unreleased]
 
+### Changed
+
+- The public README is rewritten in simple language, with a banner, screenshots of the settings page (light and dark), a diagram of what happens on an update, and short FAQs.
+- The settings page shows settings files as `~/…` paths, so a screenshot of it reveals no user name, and its example text is generic.
+
 ## [0.1.0] - 2026-11-16
 
 First public release (early version), tested by installing from the public repo and customizing the frontend-design plugin skill.

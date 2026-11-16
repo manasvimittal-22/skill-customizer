@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="240" viewBox="0 0 960 240" role="img" aria-labelledby="title desc">
+  <title id="title">skill-customizer</title>
+  <desc id="desc">Customize any Claude Code skill. Keep your changes when it updates.</desc>
+  <style>
+    .bg { fill: #f6f5f2; }
+    .card { fill: #ffffff; stroke: #e4e1db; }
+    .title { fill: #1d1c1a; font: 700 44px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .tag { fill: #6b6862; font: 400 21px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .label { fill: #1d1c1a; font: 600 15px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .on { fill: #b4532a; }
+    .off { fill: #d9d5ce; }
+    .knob { fill: #ffffff; }
+    .line { stroke: #e4e1db; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #171614; }
+      .card { fill: #211f1d; stroke: #35322e; }
+      .title, .label { fill: #ece9e4; }
+      .tag { fill: #a29d95; }
+      .on { fill: #e07a4f; }
+      .off { fill: #45413c; }
+      .line { stroke: #35322e; }
+    }
+  </style>
+  <rect class="bg" width="960" height="240" rx="20"/>
+  <text class="title" x="56" y="108">skill-customizer</text>
+  <text class="tag" x="56" y="150">Customize any Claude Code skill.</text>
+  <text class="tag" x="56" y="180">Keep your changes when it updates.</text>
+
+  <rect class="card" x="600" y="40" width="304" height="160" rx="14" stroke-width="1.5"/>
+  <text class="label" x="624" y="80">Ask before installing</text>
+  <rect class="on" x="836" y="64" width="44" height="24" rx="12"/>
+  <circle class="knob" cx="868" cy="76" r="9"/>
+  <line class="line" x1="616" y1="100" x2="888" y2="100" stroke-width="1.5"/>
+  <text class="label" x="624" y="130">Only when I ask</text>
+  <rect class="on" x="836" y="114" width="44" height="24" rx="12"/>
+  <circle class="knob" cx="868" cy="126" r="9"/>
+  <line class="line" x1="616" y1="150" x2="888" y2="150" stroke-width="1.5"/>
+  <text class="label" x="624" y="180">Show tips</text>
+  <rect class="off" x="836" y="164" width="44" height="24" rx="12"/>
+  <circle class="knob" cx="848" cy="176" r="9"/>
+</svg>

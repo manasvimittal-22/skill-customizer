@@ -8942,7 +8942,7 @@ var PAGE_HTML = `<!doctype html>
 <footer class="bar" id="bar">
   <div class="bar-inner">
     <label for="note" class="bar-label">Anything else you want a skill to do differently?</label>
-    <textarea id="note" rows="2" maxlength="4000" placeholder="For example: for trial-finder, always look in anthropics/skills first"></textarea>
+    <textarea id="note" rows="2" maxlength="4000" placeholder="For example: always ask me before adding any animation"></textarea>
     <div class="bar-actions">
       <span id="status" class="muted" role="status">No changes: Save keeps your settings as they are</span>
       <span class="bar-buttons">
@@ -9281,7 +9281,7 @@ var SettingsPageApp = class {
         case "GET /api/ping":
           return json(200, success({ alive: true }));
         case "GET /api/state":
-          return json(200, success({ skills: await this.overview.list() }));
+          return json(200, success({ skills: await this.shownSkills() }));
         case "POST /api/save":
           return await this.post(request, (body) => this.save(body));
         case "POST /api/close":
@@ -9330,6 +9330,12 @@ var SettingsPageApp = class {
     for (const { skill, assignments } of checked) await this.settings.setValues(skill, assignments);
     const saved = checked.map(({ skill, values }) => ({ skill, label: describeSkillRef(skill), values }));
     return this.submissions.record(saved, note);
+  }
+  async shownSkills() {
+    return (await this.overview.list()).map((skill) => ({
+      ...skill,
+      settingsFile: homeRelative(skill.settingsFile, this.options.homeDir)
+    }));
   }
   /** Only skills the overview lists can be changed, so the page can't write anywhere else. */
   async knownSkill(value) {
@@ -9412,7 +9418,8 @@ var SettingsPageServer = class {
     const app = new SettingsPageApp(this.overview, this.settings, this.submissions, {
       token,
       port: () => port,
-      onClose: () => stop("done")
+      onClose: () => stop("done"),
+      homeDir: this.paths.homeDir
     });
     const server = await this.http.listen(
       (request) => {
